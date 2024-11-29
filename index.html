@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cost Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Cost Calculator</h1>
+    <div class="input-group">
+      <input type="text" id="item-name" placeholder="Item Name">
+      <input type="number" id="item-price" placeholder="Price">
+      <button id="add-item">Add Item</button>
+    </div>
+    <table id="item-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="promotion">
+      <label for="promotion-percent">Promotion %:</label>
+      <input type="number" id="promotion-percent" value="0">
+    </div>
+    <div class="total">
+      <span>Total: $</span><span id="total-amount">0</span>
+    </div>
+    <button id="print-pdf">Print PDF</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
